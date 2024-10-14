@@ -1,0 +1,34 @@
+
+ 
+  <div class="container-fluid">
+
+    <app-page-title title="{{'Coupons_List'| translate}}" [breadcrumbItems]="breadCrumbItems"></app-page-title>
+    <app-custom-table
+      [addButtonLink] ="'/private/coupons/create'"
+      [addButtonLabel] ="'New_Coupon'"
+      [addButtonPermission] = "[{claimType: Modules.All, claimValue: [Permission.All]},{claimType: Modules.Coupons, claimValue: [Permission.Create]}]"
+      [columns]="columns"
+      [viewButtonLink]="'/private/coupons/view'"
+      [viewButtonPermission] = "[{claimType: Modules.All, claimValue: [Permission.All]},{claimType: Modules.Coupons, claimValue: [Permission.View]}]"
+      [editButtonLink]="'/private/coupons/edit'"
+      [editButtonPermission] = "[{claimType: Modules.All, claimValue: [Permission.All]},{claimType: Modules.Coupons, claimValue: [Permission.Update]}]"
+      [deleteButtonPermission] = "[{claimType: Modules.All, claimValue: [Permission.All]},{claimType: Modules.Coupons, claimValue: [Permission.Delete]}]"
+      [ArrayData]="originalArray"
+      [term]="'search term'"
+      [checkedStatus] = "{status: 'active', label: 'Active'}"
+      [uncheckedStatus] = "{status: 'expired', label: 'Expired'}"
+      (pageChanged)="onPageChanged($event)"
+      (onChangeEvent)="onChangeEvent($event)"
+      (onDelete)="onDelete($event)">
+</app-custom-table>
+   
+  </div>
+
+  
+  <div id="elmLoader" class="text-center">
+    <div class="spinner-border text-primary avatar-sm" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  
+  

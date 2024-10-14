@@ -1,0 +1,108 @@
+// 
+// _layouts.scss
+// 
+
+body[data-layout-size="boxed"] {
+
+    background-color: var(--#{$prefix}boxed-body-bg);
+
+    #layout-wrapper {
+        background-color: var(--#{$prefix}body-bg);
+        max-width: $boxed-layout-width;
+        margin: 0 auto;
+        box-shadow: $box-shadow;
+        min-height: 1760px;
+        [dir="rtl"] & {
+            // RTL styles for boxed layout
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+
+    #page-topbar {
+        max-width: $boxed-layout-width;
+        margin: 0 auto;
+        [dir="rtl"] & {
+            // RTL styles for boxed layout
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+
+    .footer {
+        margin: 0 auto;
+        max-width: calc(#{$boxed-layout-width} - #{$sidebar-width});
+        [dir="rtl"] & {
+            // RTL styles for boxed layout
+            margin-left: auto;
+            margin-right: 0;
+            max-width: calc(#{$boxed-layout-width} - #{$sidebar-width});
+
+        }
+    }
+
+    &.vertical-collpsed {
+        .footer {
+            max-width: calc(#{$boxed-layout-width} - #{$sidebar-collapsed-width});
+        }
+    }
+}
+
+
+// Horizontal Boxed Layout
+
+body[data-layout="horizontal"][data-layout-size="boxed"] {
+
+    #page-topbar,
+    #layout-wrapper,
+    .footer {
+        max-width: 100%;
+        [dir="rtl"] & {
+            // RTL styles for horizontal boxed layout
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+
+    .container-fluid,
+    .navbar-header {
+        max-width: $boxed-layout-width;
+        [dir="rtl"] & {
+            // RTL styles for horizontal boxed layout
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}
+
+// Scrollable layout
+
+body[data-layout-scrollable="true"] {
+    @media (min-width: 992px) {
+
+        #page-topbar,
+        .vertical-menu {
+            position: absolute;
+            [dir="rtl"] & {
+                // RTL styles for horizontal boxed layout
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+    }
+
+    &[data-layout="horizontal"] {
+        @media (min-width: 992px) {
+
+            #page-topbar,
+            .topnav {
+                position: absolute;
+                [dir="rtl"] & {
+                    // RTL styles for horizontal boxed layout
+                    margin-left: auto;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

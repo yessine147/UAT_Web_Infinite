@@ -1,0 +1,559 @@
+{
+  "HEADER": {
+    "SEARCH": "Search...",
+    "MEGA_MENU": "Mega Menu",
+    "NOTIFICATIONS": {
+      "TITLE": "Notifications",
+      "VIEW_ALL": "View All",
+      "LOAD_MORE": "View More..",
+      "FIRST": {
+        "TITLE": "Your order is placed",
+        "TEXT": "If several languages coalesce the grammar",
+        "TIME": "3 min ago"
+      },
+      "SECOND": {
+        "TITLE": "James Lemire",
+        "TEXT": "It will seem like simplified English.",
+        "TIME": "1 hours ago"
+      },
+      "THIRD": {
+        "TITLE": "Your item is shipped",
+        "TEXT": "If several languages coalesce the grammar",
+        "TIME": "3 min ago"
+      },
+      "FOUR": {
+        "TITLE": "Salena Layfield",
+        "TEXT": "As a skeptical Cambridge friend of mine occidental.",
+        "TIME": "1 hours ago"
+      }
+    },
+    "SETTINGS": "Settings",
+    "UI": {
+      "TITLE": "UI Components",
+      "LIGHTBOX": "LightBox",
+      "RANGE_SLIDER": "Range Slider",
+      "SWEET_ALERT": "Sweet Alert",
+      "RATING": "Rating",
+      "FORMS": "Forms",
+      "TABLES": "Tables",
+      "CHARTS": "Charts"
+    },
+    "APPLICATIONS": {
+      "TITLE": "Applications",
+      "ECOMMERCE": "Ecommerce",
+      "CALENDAR": "Calendar",
+      "EMAIL": "Email",
+      "PROJECTS": "Projects",
+      "TASKS": "Tasks",
+      "CONTACTS": "Contacts"
+    },
+    "EXTRA_PAGES": {
+      "TITLE": "Extra Pages",
+      "LIGHT_SIDEBAR": "Light Sidebar",
+      "COMPACT_SIDEBAR": "Compact Sidebar",
+      "HORIZONTAL_LAYOUT": "Horizontal layout",
+      "MAINTENANCE": "Maintenance",
+      "COMING SOON": "Coming Soon",
+      "TIMELINE": "Timeline",
+      "FAQ": "FAQs"
+    },
+    "LOGIN": {
+      "PROFILE": "Profile",
+      "MY_WALLET": "My Wallet",
+      "SETTINGS": "Settings",
+      "LOCK_SCREEN": "Lock screen",
+      "LOGOUT": "Logout"
+    }
+  },
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "Menu"
+    },
+    "DASHBOARD": {
+      "TEXT": "Dashboard",
+      "BADGE": "04",
+      "LIST": {
+        "DEFAULT": "Default",
+        "SAAS": "Saas",
+        "CRYPTO": "Crypto",
+        "BLOG": "Blog",
+        "JOBS": "Jobs"
+      }
+    },
+    
+    "LAYOUTS": {
+      "TEXT": "Layouts",
+      "LIST": {
+        "HORIZONTAL": "Horizontal",
+        "LIGHTSIDEBAR": "Light Sidebar",
+        "COMPACTSIDEBAR": "Compact Sidebar",
+        "ICONSIDEBAR": "Icons Sidebar",
+        "BOXED": "Boxed Layout",
+        "COLOREDSIDEBAR": "Colored Sidebar",
+        "VERTICAL": "Vertical",
+        "LIGHTTOPBAR": "Light Topbar",
+        "COLOREDHEADER": "Colored Header",
+        "SCROLLABLE": "Scrollable"
+      }
+    },
+    "USERMANAGEMENT": {
+      "TEXT": "User Management"
+    },
+    "CALENDAR": {
+      "TEXT": "Calendar"
+    },
+    "CHAT": {
+      "TEXT": "Chat",
+      "BADGE": "New"
+    },
+    "FILEMANAGER": {
+      "TEXT": "File Manager",
+      "BADGE": "New"
+    },
+    "ECOMMERCE": {
+      "TEXT": "Ecommerce",
+      "LIST": {
+        "PRODUCTS": "Products",
+        "PRODUCTDETAIL": "Product Detail",
+        "ORDERS": "Orders",
+        "CUSTOMERS": "Customers",
+        "CART": "Cart",
+        "CHECKOUT": "Checkout",
+        "SHOPS": "Shops",
+        "ADDPRODUCT": "Add Product"
+      }
+    },
+    "CRYPTO": {
+      "TEXT": "Crypto",
+      "LIST": {
+        "WALLET": "Wallet",
+        "BUY/SELL": "Buy/Sell",
+        "EXCHANGE": "Exchange",
+        "LENDING": "Lending",
+        "ORDERS": "Orders",
+        "KYCAPPLICATION": "KYC Application",
+        "ICOLANDING": "ICO Landing"
+      }
+    },
+    "EMAIL": {
+      "TEXT": "Email",
+      "LIST": {
+        "INBOX": "Inbox",
+        "READEMAIL": "Read Email",
+        "TEMPLATE": {
+          "BADGE": "New",
+          "TEXT": "Template",
+          "LIST": {
+            "BASIC": "Basic Action",
+            "ALERT": "Alert Email",
+            "BILLING": "Billing Email"
+          }
+        }
+      }
+    },
+    "COUPONMANAGEMENT": {
+      "TEXT": "Coupons"
+     
+    },
+    "COUPONAPPROVAL": {
+      "TEXT": "Coupons Approval"
+     
+    },
+    "GIFTS":{
+      "TEXT": "Gifts"
+    },
+   "MARKETINGMANAGEMENT":{
+      "TEXT": "Marketing Management"
+   },
+   "MARKETINGCOMPAIGNS":{
+      "TEXT": "Marketing Campaigns"
+     
+   }, 
+   "MARKETINGOFFERS":{
+    "TEXT": "Marketing Offers"
+    }, 
+    "SPECIALCOUPONS":{
+      "TEXT": "Special Coupons"
+    },
+    "SYSTEMLADMINISTRATION":{
+      "TEXT": "System Administration"
+    },  
+    "STORES":{
+      "TEXT": "Stores"
+    },
+    "INVOICES":{
+      "TEXT":"Invoices"
+    },
+    "TAXSETTINGS":{
+      "TEXT": "Tax Settings"
+    } ,
+    "CURRENCIES":{
+      "TEXT":"Currencies"
+    },
+    "COUNTRIES":{
+      "TEXT":"Countries"
+    },
+    "AREAS":{
+      "TEXT":"Areas"
+    },
+    "CITIES":{
+      "TEXT":"Cities"
+    },
+    "BANKS":{
+      "TEXT":"Banks"
+    },
+    "NOTIFICATIONMANAGEMENT":{
+      "TEXT":"App Management"
+    },
+    "APPNOTIFICATION":{
+      "TEXT":"App Notifications"
+    },
+   
+    "SOCIALMEDIASET":{
+      "TEXT":"Social Media Settings"
+
+    },
+    "FINANCIALMANAGEMENT":{
+      "TEXT":"Financial Management"
+
+    },
+    "TAX":{
+      "TEXT":"Tax"
+
+    },
+    "CUSTOMERINVOICES":{
+      "TEXT":"Customer Invoices"
+
+    },
+    "MERCHANTINVOICES":{
+      "TEXT":"Merchant Invoices"
+
+    },
+    
+    "PAYMENTS":{
+      "TEXT":"Payments"
+
+    },
+    "CONTRACTSANDFOLLOWUPS":{
+      "TEXT":"Contracts and Follow-Ups"
+
+    },
+    "CONTRACTS":{
+      "TEXT": "Contracts"
+    },
+    "MISSIONS":{
+      "TEXT":"Missions"
+
+    },
+    "DELEGATESTATISTICS":{
+      "TEXT":"Delegate Statistics"
+
+    },
+    "COMPLAINTS":{
+      "TEXT":"Complaints"
+
+    },
+    "MERCHANTSMANAGEMENT":{
+      "TEXT": " Merchant Management"
+    },
+    
+
+    "PROJECTS": {
+      "TEXT": "Projects",
+      "LIST": {
+        "GRID": "Projects Grid",
+        "PROJECTLIST": "Projects List",
+        "OVERVIEW": "Project Overview",
+        "CREATE": "Create New"
+      }
+    },
+    "TASKS": {
+      "TEXT": "Tasks",
+      "LIST": {
+        "TASKLIST": "Task List",
+        "KANBAN": "Kanban Board",
+        "CREATETASK": "Create Task"
+      }
+    },
+    "EMPLOYEES": {
+      "TEXT": "Employees",
+      "LIST": {
+        "EMPLOYEESLIST": "Employee List"
+        
+        
+      }
+    },
+    "CUSTOMERS": {
+      "TEXT": "Customers",
+      "LIST": {
+        "CUSTOMERSLIST": "Customer List",
+        "ABANDONEDTASKS": "Abandoned Tasks",
+        "CUSTOMERSREVIEWS": "Customer Reviews"
+
+      }
+    },
+    "ROLESETUP": {
+      "TEXT": "Role Setup"
+    }, 
+    "MERCHANTSLIST": {
+      "TEXT": "Merchant List"
+    },
+    "MERCHANTSAPPROVAL": {
+      "TEXT": "Merchant Approval List"
+    },
+    
+    "CUSTOMERSCOMMISSION": {
+      "TEXT": "Customers Commissions"
+      
+    },
+    "MERCHANTSCOMMISSION": {
+      "TEXT": "Merchant Commissions"
+      
+    },
+    
+    "OFFERS": {
+      "TEXT": "Offers"
+      
+    },
+    "DEPARTMENTMANAGEMENT":{
+      "TEXT": "Department Management"
+    },
+    "DEPARTMENTLIST":{
+      "TEXT": "Department List"
+    },
+    "WALLETMANAGEMENT":{
+      "TEXT": "Wallet Management"
+    },
+    "MERCHANTWALLET":{
+      "TEXT": "Merchant Wallet "
+    },
+    "PRODUCTMANAGEMENT":{
+      "TEXT": "Product Management"
+    },
+    "CUSTOMERWALLET":{
+      "TEXT": "Customer Wallet "
+    },
+    "SUBSCRIPTION":{
+      "TEXT":"Subscriptions"
+    },
+    "COMPANYSUBSCRIPTION":{
+      "TEXT":"Company Subscriptions"
+    },
+    "PREPRINTEDMEMBERSHIP":{
+      "TEXT": "Pre-Printed MemberShips"
+    },
+    "SALESANDREPORTS": {
+      "TEXT": "Sales & Reports",
+      "BADGE": "New",
+      "LIST": {
+        "EARNINGREPORT": "Earning Reports",
+        "INHOUSESALES": "InHouse Sales",
+        "VENDORSALES": "Vendor Sales",
+        "TRANSACTIONREPORT": "Transaction Reports"
+      }
+    },
+    "JOBS": {
+      "TEXT": "Jobs",
+      "BADGE": "New",
+      "LIST": {
+        "JOBLIST": "Job List",
+        "JOBGRID": "Job Grid",
+        "APPLYJOB": "Apply Job",
+        "JOBDETAILS": "Job Details",
+        "JOBCATEGORIES": "Jobs Categories",
+        "CANDIDATE": {
+          "TEXT": "Candidate",
+          "LIST": {
+            "LIST": "List",
+            "OVERVIEW": "Overview"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "TEXT": "Pages"
+    },
+    "AUTHENTICATION": {
+      "TEXT": "Authentication",
+      "BADGE": "New",
+      "LIST": {
+        "LOGIN": "Login",
+        "LOGIN2": "Login 2",
+        "REGISTER": "Register",
+        "REGISTER2": "Register 2",
+        "RECOVERPWD": "Recover Password",
+        "RECOVERPWD2": "Recover Password 2",
+        "LOCKSCREEN": "Lock screen",
+        "LOCKSCREEN2": "Lock screen 2",
+        "CONFIRMMAIL": "Confirm Mail",
+        "CONFIRMMAIL2": "Confirm Mail 2",
+        "EMAILVERIFICATION": "Email verification",
+        "EMAILVERIFICATION2": "Email verification 2",
+        "TWOSTEPVERIFICATION": "Two step verification",
+        "TWOSTEPVERIFICATION2": "Two step verification 2"
+      }
+    },
+    "UTILITY": {
+      "TEXT": "Utility",
+      "LIST": {
+        "STARTER": "Starter Page",
+        "MAINTENANCE": "Maintenance",
+        "TIMELINE": "Timeline",
+        "FAQS": "FAQs",
+        "PRICING": "Pricing",
+        "ERROR404": "Error 404",
+        "ERROR500": "Error 500"
+      }
+    },
+    "COMPONENTS": {
+      "TEXT": "Components"
+    },
+    "UIELEMENTS": {
+      "TEXT": "UI Elements",
+      "LIST": {
+        "ALERTS": "Alerts",
+        "BUTTONS": "Buttons",
+        "CARDS": "Cards",
+        "CAROUSEL": "Carousel",
+        "DROPDOWNS": "Dropdowns",
+        "GRID": "Grid",
+        "IMAGES": "Images",
+        "LIGHTBOX": "Lightbox",
+        "MODALS": "Modals",
+        "RANGESLIDER": "Range Slider",
+        "PROGRESSBAR": "Progress Bars",
+        "PLACEHOLDER": "Placeholder",
+        "SWEETALERT": "Sweet Alert",
+        "TABS": "Tabs & Accordions",
+        "TYPOGRAPHY": "Typography",
+        "TOASTS": "Toasts",
+        "VIDEO": "Video",
+        "GENERAL": "General",
+        "COLORS": "Colors",
+        "RATING": "Rating",
+        "NOTIFICATION": "Notification",
+        "UTILITIES": "Utilities",
+        "CROPPER": "Image Cropper"
+      }
+    },
+    "FORMS": {
+      "TEXT": "Forms",
+      "BADGE": "09",
+      "LIST": {
+        "ELEMENTS": "Form Elements",
+        "VALIDATION": "Form Validation",
+        "ADVANCED": "Form Advanced",
+        "EDITOR": "Form Editor",
+        "FILEUPLOAD": "Form File Upload",
+        "REPEATER": "Form Repeater",
+        "WIZARD": "Form Wizard",
+        "MASK": "Form Mask",
+        "LAYOUTS": "Form Layouts"
+      }
+    },
+    "TABLES": {
+      "TEXT": "Tables",
+      "LIST": {
+        "BASIC": "Basic Tables",
+        "DataTables": "Data Tables",
+        "EditTableTables": "Editable Table"
+      }
+    },
+    "CHARTS": {
+      "TEXT": "Charts",
+      "LIST": {
+        "APEX": "Apex Chart",
+        "CHARTJS": "Chartjs Chart",
+        "CHARTIST": "Chartist Chart",
+        "ECHART": "E Chart"
+      }
+    },
+    "ICONS": {
+      "TEXT": "Icons",
+      "LIST": {
+        "BOXICONS": "Boxicons",
+        "MATERIALDESIGN": "Material Design",
+        "DRIPICONS": "Dripicons",
+        "FONTAWESOME": "Font Awesome"
+      }
+    },
+    "MAPS": {
+      "TEXT": "Maps",
+      "LIST": {
+        "GOOGLEMAP": "Google Maps",
+        "LEAFLETMAP": "Leaflet Maps",
+        "AMCHARTS": "AmCharts"
+      }
+    },
+    "MULTILEVEL": {
+      "TEXT": "Multi Level",
+      "LIST": {
+        "LEVEL1": {
+          "1": "Level 1.1",
+          "2": "Level 1.2",
+          "LEVEL2": {
+            "1": "Level 2.1",
+            "2": "Level 2.2"
+          }
+        }
+      }
+    }
+  },
+  "Coupon_Approval_List": "Coupon Approval List",
+  "Merchant_Name": "Merchant Name",
+  "Start_Date": "Start Date",
+  "End_Date": "End Date",
+  "Request_Date": "Request Date",
+  "Decline": "Decline",
+  "No_items_available": "No items available",
+  "Loading...": "Loading...",
+  "Approve":"Approve",
+  "Title":"Title",
+  "Status": "Status",
+  "Edit_coupon": "Edit_coupon",
+  "update_coupon": "Update coupon",
+  "Add coupon": "Add coupon",
+  "Disable_Now": "Disable Now",
+  "Employee_Basic_Informations": "Employee Basic Informations",
+  "View_Employee_Permissions": "View Employee's Permissions",
+  "Edit_employee": "Edit Employee",
+  "Update_employee": "Update Employee",
+  "Add_employee": "Add Employee",
+  "Bank_Account_is_required": "Bank Account is required",
+  "Bank_Name":"Bank Name",
+  "Bank_Name_is_required": "Bank Name is required",
+  "Bank_Account_Number": "Bank Account Number",
+  "Role_is_required": "Role is required",
+  "Add_merchant": "Add Merchant",
+  "Update_merchant": "Update Merchant",
+  "Number_Of_Offers":"Number Of Offers",
+  "Store_Pictures": "Store Pictures",
+  "Add_store": "Add Store",
+  "update_store": "Update Store",
+  "Store_Name": "Store Name",
+  "Countries_List":"Countries List",
+  "New_Country": "New Country",
+  "Created_At": "Created At",
+  "Country_Code": "Country Code",
+  "Country_Name": "Name",
+  "Country_Name_Trans": "Translated Name",
+  "Phone_Code": "Phone Code",
+  "Country_flag": "Flag",
+  "Add_country": "Add Country",
+  "update_country": "Update Country",
+  "Areas_List":"Areas List",
+  "New_Area": "New Area",
+  "Area_Name": "Name",
+  "Area_Name_Trans": " Area Translated Name",
+  "Add_area": "Add Area",
+  "update_area": "Update Area",
+  "Enter_the_Name_Of_the_area": "Enter the name of the area",
+  "Enter_the_trans_Name_Of_the_area": "Enter the trans Name Of the area",
+  "Select_the_Country": "Select the Country",
+  "Country_is_required": "Country is required",
+  "merchant_is_required": "Merchant is required"
+
+
+
+
+}

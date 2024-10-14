@@ -1,0 +1,147 @@
+<div class="row">
+    <div class="col-19">
+        <div class="card">
+            <div class="card-body ">
+              <form (ngSubmit)="onSubmit()" [formGroup]="storeForm"  class="m-4">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group ">
+                           <label for="name" >{{'Store_Name' | translate}} <span class="text-danger">*</span></label>
+                            <input type="text" id="name" class="form-control" formControlName="name"  >
+                            <div *ngIf="storeForm.get('name').touched && storeForm.get('name').invalid" class="invalid-feedback d-block">
+                                <span *ngIf="storeForm.get('name').errors?.['required']">{{'Name is required'| translate}}.</span>
+                              </div>
+                          </div> 
+                      </div>
+                 
+                <div class="col-md-6 mb-3">
+                  <div class="form-group ">
+                        <label for="merchant_id" >{{'Merchant_Name' | translate}}<span class="text-danger">*</span></label>
+                        <select  id="merchant_id"class="form-control"  formControlName="merchant_id" (change)="onChangeMerchantSelection($event)">
+                              <option value="" disabled selected>{{'Select_the_merchant' | translate}}</option>
+                              <option *ngFor="let merchant of (merchantlist$ |async)" [value]="merchant.id">
+                               {{ merchant.merchantName }}
+                             </option>
+                        </select>
+                        <div *ngIf="storeForm.get('merchant_id').touched && storeForm.get('merchant_id').invalid" class="invalid-feedback d-block">
+                          <span *ngIf="storeForm.get('merchant_id').errors?.['required']">{{'merchant_is_required'| translate}}.</span>
+                      </div> 
+                  </div>                       
+                </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group ">
+                       <label for="description" >{{'Description' | translate}} <span class="text-danger">*</span></label>
+                       <textarea class="form-control" id="description" formControlName="description" rows="3"></textarea>
+                       <div *ngIf="storeForm.get('name').touched && storeForm.get('name').invalid" class="invalid-feedback d-block">
+                            <span *ngIf="storeForm.get('name').errors?.['required']">{{'Name is required'| translate}}.</span>
+                          </div>
+                      </div> 
+                  </div>
+                  <div *ngIf="storeForm" class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <label for="phone" >{{'Phone Number' | translate}} <span class="text-danger">*</span></label><br>
+                     <app-phone-number
+                     [initialPhoneNumber]="storeForm.get('phone').value"
+                     (phoneNumberChanged)="onPhoneNumberChanged($event)" >
+                    </app-phone-number>
+                    <div *ngIf="storeForm.get('phone').touched && storeForm.get('phone').invalid" class="invalid-feedback d-block">
+                      <span *ngIf="storeForm.get('phone').errors?.['required']">{{'Phone Number is required'| translate}}.</span>
+                    </div>   
+                    </div>
+                  </div>
+                  
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <label for="area_id">{{'Area'| translate}}</label>
+                        <select  id="area_id"class="form-control"  formControlName="area_id" (change)="onChangeAreaSelection($event)" >
+                          <option value="" disabled selected>{{'Select_the_Area' | translate}}</option>
+                          <option *ngFor="let area of filteredAreas" [value]="area.id">
+                           {{ area.name }}
+                         </option>
+                        </select>  
+                         <div *ngIf="storeForm.get('area_id').touched && storeForm.get('area_id').invalid" class="invalid-feedback d-block">
+                            <span *ngIf="storeForm.get('area_id').errors?.['required']">{{'area_is_required'| translate}}.</span>
+                        </div>   
+                       </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group ">
+                        <label for="city_id" >{{'City' | translate}}</label>
+                        <select  id="city_id"class="form-control"  formControlName="city_id" (change)="onChangeAreaSelection($event)" >
+                          <option value="" disabled selected>{{'Select_the_City' | translate}}</option>
+                          <option *ngFor="let city of filteredCities" [value]="city.id">
+                           {{ city.name }}
+                         </option>
+                        </select>  
+                         <div *ngIf="storeForm.get('city_id').touched && storeForm.get('city_id').invalid" class="invalid-feedback d-block">
+                            <span *ngIf="storeForm.get('city_id').errors?.['required']">{{'area_is_required'| translate}}.</span>
+                        </div>   
+                       </div>                     
+                    </div>
+              
+                   
+                 
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                          <label for="images">{{ 'Store_Pictures' | translate }}</label>
+                          <dropzone class="dropzone" [config]="dropzoneConfig" [message]="'Drop Images here or click to upload.'" (success)="onUploadSuccess($event)">
+                          </dropzone>
+                        </div>
+                     </div>
+                     <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <label for="images"></label>
+                          @if(uploadedFiles){
+                          <ul class="list-unstyled mb-0" id="dropzone-preview" style="max-height: 245px; overflow-y: auto;">
+                            @for (file of uploadedFiles; track $index) {
+                            <li class="mt-2" id="dropzone-preview-list">
+                              <!-- This is used as the file preview template -->
+                              <div class="border rounded">
+                                <div class="d-flex p-2">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar-sm bg-light rounded">
+                                      @if(file.dataURL){
+                                      <img class="img-fluid rounded d-block" [src]="file.dataURL" alt="Dropzone-Image" />
+                                      }@else {
+                                      <img class="img-fluid rounded d-block" [src]="file.url" alt="Dropzone-Image" />
+                                      }
+                                    </div>
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <div class="pt-1">
+                                      @if (file.name) {
+                                      <h5 class="fs-md mb-1">{{ file.name }}</h5>
+                                      }
+                                      @if(file.size){
+                                      <p class="fs-sm text-muted mb-0">{{ file.size }}</p>
+                                      }
+                                      <strong class="error text-danger" data-dz-errormessage></strong>
+                                    </div>
+                                  </div>
+                                  <div class="flex-shrink-0 ms-3">
+                                    <button (click)="removeFile(file)" class="btn btn-sm btn-danger">{{'Delete'| translate}}</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            }
+                          </ul>}
+                        
+                        </div>
+                      </div>
+                     
+                                 
+              </div>
+                <div class="col-12  mt-4">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" id="cancel-btn" class="btn btn-outline-secondary me-2" (click)="onCancel()">{{'Cancel'|translate}}</button>
+                        <button type="submit" class="btn btn-success" [disabled]="storeForm.invalid"> {{ (type == 'create' ? 'Add_store' : 'update_store') | translate }}
+                        </button>
+                    </div>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div> <!-- end col -->
+  </div>
+  
